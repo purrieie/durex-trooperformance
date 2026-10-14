@@ -217,6 +217,7 @@
   .cta a.pg{display:inline-block;text-decoration:none;}
   .track>.price-box{margin-top:0;}
   @media(max-width:880px){.cases{grid-template-columns:1fr;}}
+  @media(max-width:880px){.heads{grid-template-columns:1fr!important;}}
 </style>
 </head>
 <body>
@@ -304,8 +305,7 @@
           <div class="page-card">
             <div class="pc-t">Homepage</div>
             <div class="pc-s">/</div>
-            <div class="mr"><div class="m-l">Score, mobile</div><div class="m-v bad">14</div></div>
-            <div class="mr"><div class="m-l">Score, desktop</div><div class="m-v bad">15</div></div>
+            <div class="mr"><div class="m-l">Score</div><div class="m-v bad">14</div></div>
             <div class="mr"><div class="m-l">LCP</div><div class="m-v bad">26.3s</div></div>
             <div class="mr"><div class="m-l">Speed Index</div><div class="m-v bad">12.8s</div></div>
             <div class="mr"><div class="m-l">TBT</div><div class="m-v bad">1,600ms</div></div>
@@ -314,8 +314,7 @@
           <div class="page-card">
             <div class="pc-t">Collection page</div>
             <div class="pc-s">/collections/condoms</div>
-            <div class="mr"><div class="m-l">Score, mobile</div><div class="m-v bad">16</div></div>
-            <div class="mr"><div class="m-l">Score, desktop</div><div class="m-v bad">37</div></div>
+            <div class="mr"><div class="m-l">Score</div><div class="m-v bad">16</div></div>
             <div class="mr"><div class="m-l">LCP</div><div class="m-v bad">23.8s</div></div>
             <div class="mr"><div class="m-l">Speed Index</div><div class="m-v bad">6.4s</div></div>
             <div class="mr"><div class="m-l">TBT</div><div class="m-v bad">1,869ms</div></div>
@@ -324,15 +323,14 @@
           <div class="page-card">
             <div class="pc-t">Product page</div>
             <div class="pc-s">/products/durex-delay-spray-for-men-20g</div>
-            <div class="mr"><div class="m-l">Score, mobile</div><div class="m-v bad">19</div></div>
-            <div class="mr"><div class="m-l">Score, desktop</div><div class="m-v bad">39</div></div>
+            <div class="mr"><div class="m-l">Score</div><div class="m-v bad">19</div></div>
             <div class="mr"><div class="m-l">LCP</div><div class="m-v bad">9.0s</div></div>
             <div class="mr"><div class="m-l">Speed Index</div><div class="m-v bad">7.9s</div></div>
             <div class="mr"><div class="m-l">TBT</div><div class="m-v bad">992ms</div></div>
             <div class="mr"><div class="m-l">CLS</div><div class="m-v bad">1.426</div></div>
           </div>
         </div>
-        <div class="note">Mobile unless marked desktop. Worst of 3 runs per metric.</div>
+        <div class="note">Mobile. Worst of 3 runs per metric.</div>
 
         <div class="mlbl">What is causing it</div>
         <div class="causes">
@@ -362,11 +360,10 @@
           <div class="note" style="margin-top:14px;"><b>Within our control:</b> render-blocking scripts deferred, images optimised, layout shift fixed. LCP, FCP and TBT are now driven by third-party app scripts, which Phase 2 addresses.</div>
         </div>
 
-        <div class="mlbl">Achievable targets, all three pages</div>
+        <div class="mlbl">Achievable mobile targets, all three pages</div>
         <div class="ctx"><span class="lbl">Achievable goal</span>These are the targets once the fixes go live, from a lab simulation of the fixes on your preview theme. Our lab setup scores stricter than PageSpeed (4 to 5 here vs 14 to 23 on PageSpeed), so compare before and after within the same setup.</div>
-        <div class="heads" style="margin-top:14px;">
+        <div class="heads" style="margin-top:14px;grid-template-columns:repeat(2,1fr);">
           <div class="head"><div class="h-n"><span class="before">4–5</span><span class="ar">→</span><span class="after">25–28</span></div><div class="h-l">Mobile score</div></div>
-          <div class="head"><div class="h-n"><span class="before">12–26</span><span class="ar">→</span><span class="after">41–50</span></div><div class="h-l">Desktop score</div></div>
           <div class="head"><div class="h-n"><span class="before">0.98</span><span class="ar">→</span><span class="after">≤0.12</span></div><div class="h-l">Layout shift (CLS), every page</div></div>
         </div>
         <div class="note" style="margin:14px 0 0;"><span class="before mono">Today</span> &nbsp;→&nbsp; <span class="after mono">Achievable goal</span></div>
@@ -374,26 +371,20 @@
           <div class="page-card">
             <div class="pc-t">Homepage</div>
             <div class="pc-s">/</div>
-            <div class="mr"><div class="m-l">Score, mobile</div><div class="m-v"><span class="before">5</span><span class="arrow">→</span><span class="after">25</span></div></div>
-            <div class="mr"><div class="m-l">Score, desktop</div><div class="m-v"><span class="before">12</span><span class="arrow">→</span><span class="after">41</span></div></div>
-            <div class="mr"><div class="m-l">CLS, mobile</div><div class="m-v"><span class="before">0.991</span><span class="arrow">→</span><span class="after">0.117</span></div></div>
-            <div class="mr"><div class="m-l">CLS, desktop</div><div class="m-v"><span class="before">0.639</span><span class="arrow">→</span><span class="after">0.120</span></div></div>
+            <div class="mr"><div class="m-l">Score</div><div class="m-v"><span class="before">5</span><span class="arrow">→</span><span class="after">25</span></div></div>
+            <div class="mr"><div class="m-l">CLS</div><div class="m-v"><span class="before">0.991</span><span class="arrow">→</span><span class="after">0.117</span></div></div>
           </div>
           <div class="page-card">
             <div class="pc-t">Collection page</div>
             <div class="pc-s">/collections/condoms</div>
-            <div class="mr"><div class="m-l">Score, mobile</div><div class="m-v"><span class="before">4</span><span class="arrow">→</span><span class="after">28</span></div></div>
-            <div class="mr"><div class="m-l">Score, desktop</div><div class="m-v"><span class="before">26</span><span class="arrow">→</span><span class="after">49</span></div></div>
-            <div class="mr"><div class="m-l">CLS, mobile</div><div class="m-v"><span class="before">0.981</span><span class="arrow">→</span><span class="after">0.047</span></div></div>
-            <div class="mr"><div class="m-l">CLS, desktop</div><div class="m-v"><span class="before">0.607</span><span class="arrow">→</span><span class="after">0.013</span></div></div>
+            <div class="mr"><div class="m-l">Score</div><div class="m-v"><span class="before">4</span><span class="arrow">→</span><span class="after">28</span></div></div>
+            <div class="mr"><div class="m-l">CLS</div><div class="m-v"><span class="before">0.981</span><span class="arrow">→</span><span class="after">0.047</span></div></div>
           </div>
           <div class="page-card">
             <div class="pc-t">Product page</div>
             <div class="pc-s">/products/durex-condoms-extra-time-10-units</div>
-            <div class="mr"><div class="m-l">Score, mobile</div><div class="m-v"><span class="before">4</span><span class="arrow">→</span><span class="after">27</span></div></div>
-            <div class="mr"><div class="m-l">Score, desktop</div><div class="m-v"><span class="before">22</span><span class="arrow">→</span><span class="after">50</span></div></div>
-            <div class="mr"><div class="m-l">CLS, mobile</div><div class="m-v"><span class="before">0.981</span><span class="arrow">→</span><span class="after">0.070</span></div></div>
-            <div class="mr"><div class="m-l">CLS, desktop</div><div class="m-v"><span class="before">0.675</span><span class="arrow">→</span><span class="after">0.081</span></div></div>
+            <div class="mr"><div class="m-l">Score</div><div class="m-v"><span class="before">4</span><span class="arrow">→</span><span class="after">27</span></div></div>
+            <div class="mr"><div class="m-l">CLS</div><div class="m-v"><span class="before">0.981</span><span class="arrow">→</span><span class="after">0.070</span></div></div>
           </div>
         </div>
         <div class="note">Image, GIF, Google tag and category-circle fixes are not counted here. They add on top.</div>
@@ -467,7 +458,7 @@
           <div class="a-card">
             <div class="a-tag">Phase 01, Track 1</div>
             <div class="a-top"><div class="a-n">01</div><h4>Ship the theme fixes and hold them</h4></div>
-            <div class="a-num">25–28 mobile, 41–50 desktop</div>
+            <div class="a-num">25–28 mobile</div>
             <p>Achievable lab scores. Held against regressions as campaigns and apps change.</p>
           </div>
           <div class="a-arrow">→</div>
@@ -492,7 +483,7 @@
         <div class="steps">
           <div class="step"><div class="step-n">A</div><div class="step-body"><h4>Monthly audits</h4><p>Home, collection and product re-tested every month. Regressions fixed before they stack up.</p></div></div>
           <div class="step"><div class="step-n">B</div><div class="step-body"><h4>Change guidelines</h4><p>A guideline doc for the Durex tech team and agencies, so new campaigns and apps don't undo the gains.</p></div></div>
-          <div class="step"><div class="step-n">C</div><div class="step-body"><h4>Open measurement</h4><p>Lighthouse, median of 3 runs, mobile and desktop. Durex can verify anytime on PageSpeed Insights.</p></div></div>
+          <div class="step"><div class="step-n">C</div><div class="step-body"><h4>Open measurement</h4><p>Lighthouse, median of 3 runs, mobile. Durex can verify anytime on PageSpeed Insights.</p></div></div>
         </div>
 
         <div class="pager"><button class="pg" data-go="scope">← Scope of work</button><button class="pg pri" data-go="invest">Commercials →</button></div>
